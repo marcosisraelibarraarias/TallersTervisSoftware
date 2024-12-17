@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+    id="LoginIO"
+    title="Ingrese su Usario y Contraseña"
+    orient="vertical"
+    xmlns= "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <label>Usuario:</label>
+    <textbox />
+
+    <label>Contraseña</label>
+    <textbox />
+
+</window>
