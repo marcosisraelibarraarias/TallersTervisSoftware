@@ -23,8 +23,7 @@
             }
 
             div.grid {
-                  margin: 1em;
-/*border: thin solid black;*/
+
             }
             .grid div {
                 background: white;
@@ -51,40 +50,21 @@
                   overflow: hide;
                   padding-right: 1ch;
             }
-            .buttons {<style>
-           body {
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-            } 
-            h1 {
-                  background: blue;
-color: white;<style>
-           body {
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-            } 
-            h1 {
-                  background: blue;
-color: white;
-                  text-align: center;
-border: light-gray;
+            .buttons {
+                /*border: thin solid black;*/
+                width: 100%;
+                text-align: right;
             }
-            div.grid {
-                  margin: 1em;
-border: thin solid black;
+            input[type=button] {
+                min-width: 7em;
+                text-align: center;
             }
-            label, span, input[type=text] {
-                  display: inline-block;
-                  min-width: 7em;
-                  overflow: hide;
-                  padding-right: 1ch;
-            }
-      </style>
+       </style>
+
 
       
         <h1>Ventas</h1>
 
-        <input type="button" value="Buscar Producto" ></input><br /><br />
 
         <span>Producto</span>
         <input type="text"  value="Llave Remota Young 12" /><br /><br />
@@ -98,12 +78,28 @@ border: thin solid black;
         <span>Cantidad</span>
         <input type="text" value="1" ></input><br /><br />
 
+	<label>Buscar por Palabras Clave:</label>
+	<input type="text" value=" 0000003" ></input>
+	<input type="button" value="Buscar"></input><br /><br />
+
         <div class="buttons">
-        <input type="button" value="Agregar" ></input><br /><br />
+        	<input type="button" value="Agregar" ></input><br /><br />
         </div>
         
-        <span>Productos en esta venta</span><br /><br />
 
+
+
+	<div>
+		<h4>Pagar en:</h4>
+		<label>Efectivo</label>
+			<input type="radio" value="checked" ></input><br /><br />
+		<label>Tarjeta</label>
+			<input type="radio" value="false" ></input><br /><br />
+	<div class="buttons">
+		<input type="button" value="Pagar" ></input><br /><br />
+	</div>
+
+        <span>Productos en esta venta</span><br /><br />
 	<div class="buttons">
 		<label>Precio Total</label><input type="text" value="75.00" ></input><br /><br />
 	</div>
