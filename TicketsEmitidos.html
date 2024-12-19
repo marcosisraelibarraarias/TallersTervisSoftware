@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+      <head>
+  
+      </head>      
+  <body>
+          <style>
+           body {
+                  background:  #d7dbdd ;
+                  padding: 1em;     
+                  max-width: 50em;
+                  font-family: sans-serif;
+                  font: arial;Descripción
+
+            } 
+            h1 {
+                  background: blue;
+                  color: white;
+                  text-align: center;Descripción
+                  border: light-gray;
+                  font-size: x-large;
+            }
+
+            div.grid {
+                  margin: 1em;
+/*border: thin solid black;*/
+            }
+            .grid div {
+                background: white;
+                border: solid thin black;
+                vertical-align: middle;
+
+            }
+            .grid div.header {
+                background: #d7dbdd;
+                border: solid thin black;
+                vertical-align: middle;
+            }
+
+            .grid div span, .grid div label {
+                vertical-align: middle;
+                display: inline-block;
+                min-width: 10em;
+                max-width: 10em;
+            }
+
+             label, span, input[type=text] {
+                  display: inline-block;
+                  min-width: 7em;
+                  overflow: hide;
+                  padding-right: 1ch;
+            }
+            .buttons {
+                /*border: thin solid black;*/
+                width: 100%;
+                text-align: right;
+            }
+            input[type=button] {
+                min-width: 7em;
+                text-align: center;
+            }
+       </style>
+
+        <h1>Tickets</h1>
+
+        <span>Número</span>
+        <input type="text" value="000000345" ></input><br /><br />
+
+        <span>Fecha</span>
+        <input type="text" value="2024/12/10 14:23"></input><br /><br />
+
+        <span>Precio</span>
+        <input type="text" value="350.00"></input><br /><br />
+
+        <span>Descripcion</span>
+        <input type="text" value="Una llave remota X112A   150.00
+                Una alarma Tiger 222 Sonic   200.00"></input><br /><br />
+
+	<div class="buttons">
+
+	<input type="button" value="Imprimir"></input>
+	<input type="button" value="Convertir en Factura"></input><br /><br />
+
+	</div>
+
+	
+	<label>Buscar por Palabras Clave:</label>
+	<input type="text" value=" 0000003" ></input>
+	<input type="button" value="Buscar"></input><br /><br />
+	
+        
+        <span>Elementos</span>
+
+        <div class="grid">
+	 <div class="header">
+          <label>Número</label>
+          <label>Fecha</label>
+          <label>Precio</label>
+         <label>Descripción</label>
+	</div>
+	<div>
+	  <span>000000345</span>
+
+          <span>2024/12/10 14:23</span>
+
+          <span>350.00</span>
+ 
+          <span>Una llave remota X112A   150.00
+                Una alarma Tiger 222 Sonic   200.00</span><br /><br />
+	</div>
+	<div>
+          <span>000000315</span>
+
+          <span>2024/12/10 10:11</span>
+
+          <span>50.00</span>
+
+          <span>Una llave Young12   50.00</span><br /><br />
+	</div>
+        <div>
+ </body>
+</html>
