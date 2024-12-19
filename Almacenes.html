@@ -23,8 +23,7 @@
             }
 
             div.grid {
-                  margin: 1em;
-/*border: thin solid black;*/
+
             }
             .grid div {
                 background: white;
@@ -36,13 +35,20 @@
                 background: #d7dbdd;
                 border: solid thin black;
                 vertical-align: middle;
+		overflow: wrap;
             }
 
             .grid div span, .grid div label {
                 vertical-align: middle;
                 display: inline-block;
-                min-width: 15em;
-                max-width: 15em;
+                min-width: 7em;
+                max-width: 7em;
+            }
+	.grid div span.price , .grid div label.price, .quantity , .quantity {
+                vertical-align: middle;
+                display: inline-block;
+                min-width: 3em;
+                max-width: 3em;
             }
 
              label, span, input[type=text] {
@@ -50,6 +56,7 @@
                   min-width: 7em;
                   overflow: hide;
                   padding-right: 1ch;
+		 vertical-align: middle;
             }
             .buttons {
                 /*border: thin solid black;*/
@@ -69,7 +76,7 @@
         <span>Nombre</span>
         <input type="text" /><br /><br />
 
-        <span>Localización (dentro del local)</span>
+        <span>Localización<br />(dentro del local)</span>
         <input type="text" ></input><br /><br />
 
         <span>Tipo de elementos</span>
@@ -83,50 +90,49 @@
 
         <div class="grid">
 
+	 <div class="header">
           <label>Nombre</label>
-          <span>Llave X112</span>
-          <label>Cantidad</label>
-          <span>3</span>
-
+          <label class="quantity">Cantidad</label>
           <label>Nombre del Proveedor</label>
+          <label class="price">Precio de Compra</label>
+          <label class="price">Precio de Venta</label>
+          <label>Identificador del tipo de elemento</label>
+          <label>Numero de serie</label>
+	<div>
+
+          <span>Llave Remota 4A-PC7952E</span>
+             
+          <span class="quantity">1</span>
+
           <span>Datong</span>
 
-          <label>Precio de Compra</label>
-          <span>100.00</span>
+          <span class="price">100.00</span>
 
-          <label>Precio de Venta</label>
-          <span>130.00</span>
+          <span class="price">130.00</span>
 
-          <label>Identificador del tipo de elemento</label>
           <span>X112Datong</span>
 
-
-          <label>Numero de serie</label>
           <span>NSX112202403</span><br />
+	</div>
+	<div>
+          <span>Keyyou</span> 
+
+          <span class="quantity">1</span>
+
+	 <span>Keyyou</span>
 
 
+          <span class="price">150.00</span>
 
-            <label>Nombre</label>
-          <span>Llave Remota 4A-PC7952E</span>
-              
-          <label>Cantidad</label>
-          <span>0</span>
 
-          <label>Nombre del Proveedor</label>
-          <span>Keyyou</span>
+          <span class="price">180.00</span>
 
-          <label>Precio de Compra</label>
-          <span>150.00</span>
-
-          <label>Precio de Venta</label>
-          <span>180.00</span>
-
-          <label>Identificador del tipo de elemento</label>
           <span>KEYYOURPC79</span>
 
 
-          <label>Numero de serie</label>
-          <span>KEYYOURPC79</span><br />
+          <span>KEYYOURPC79</span>
+
+	</div>
 
         <div>
 
