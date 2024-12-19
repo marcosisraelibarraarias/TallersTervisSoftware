@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <html>
       <head>
   
       </head>      
   <body>
+      
      <style>
            body {
-                  background: light-gray;
-                  padcding: 1em;     
+                  background:  #d7dbdd ;
+                  padding: 1em;     
+                  max-width: 50em;
+                  font-family: sans-serif;
+                  font: arial;Descripción
+
+            } 
+            h1 {
+                  background: blue;
+                  color: white;
+                  text-align: center;Descripción
+                  border: light-gray;
+                  font-size: x-large;
+            }
+
+            div.grid {
+                  margin: 1em;
+/*border: thin solid black;*/
+            }
+            .grid div {
+                background: white;
+                border: solid thin black;
+                vertical-align: middle;
+
+            }
+            .grid div.header {
+                background: #d7dbdd;
+                border: solid thin black;
+                vertical-align: middle;
+            }
+
+            .grid div span, .grid div label {
+                vertical-align: middle;
+                display: inline-block;
+                min-width: 15em;
+                max-width: 15em;
+            }
+
+             label, span, input[type=text] {
+                  display: inline-block;
+                  min-width: 7em;
+                  overflow: hide;
+                  padding-right: 1ch;
+            }
+            .buttons {<style>
+           body {
+                  background:  #d7dbdd ;
+                  padding: 1em;     
+            } 
+            h1 {
+                  background: blue;
+color: white;<style>
+           body {
+                  background:  #d7dbdd ;
+                  padding: 1em;     
             } 
             h1 {
                   background: blue;
@@ -16,7 +69,7 @@ color: white;
                   text-align: center;
 border: light-gray;
             }
-            div.grid {c
+            div.grid {
                   margin: 1em;
 border: thin solid black;
             }
@@ -25,8 +78,48 @@ border: thin solid black;
                   min-width: 7em;
                   overflow: hide;
                   padding-right: 1ch;
-            }c
+            }
       </style>
+
+      
+        <h1>Ventas</h1>
+
+        <input type="button" value="Buscar Producto" ></input><br /><br />
+
+        <span>Producto</span>
+        <input type="text"  value="Llave Remota Young 12" /><br /><br />
+
+        <span>Descripción</span>
+        <input type="text"  value="Llave Remota Young 12, es la pieza original incluida en los autos Chrysler" /><br /><br />
+
+        <span>Precio</span>
+        <input type="text"  value="75.00" ></input><br /><br />
+
+        <span>Cantidad</span>
+        <input type="text" value="1" ></input><br /><br />
+
+        <div class="buttons">
+        <input type="button" value="Agregar" ></input><br /><br />
+        </div>
+        
+        <span>Productos en esta venta</span>
+
+        <div class="grid">
+            <div class="header">
+
+          <label>Producto</label>
+          <label>Descripción</label>
+          <label>Precio</label>
+        </div>
+          <div>
+          <span>Llave X112</span>
+
+          <span>Llave remota para autos Ford de entre 2015 y 2020</span>
+
+          <span>150.00</span>
+         </div>
+
+        <div>
 
  </body>
 </html>
