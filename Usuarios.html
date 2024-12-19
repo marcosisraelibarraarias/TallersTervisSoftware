@@ -23,8 +23,6 @@
             }
 
             div.grid {
-                  margin: 1em;
-/*border: thin solid black;*/
             }
             .grid div {
                 background: white;
@@ -41,72 +39,58 @@
             .grid div span, .grid div label {
                 vertical-align: middle;
                 display: inline-block;
-                min-width: 15em;
-                max-width: 15em;
+                min-width: 10em;
+                max-width: 10em;
             }
 
              label, span, input[type=text] {
                   display: inline-block;
                   min-width: 7em;
-                  overflow: hide;
+                  overflow: wrap;
                   padding-right: 1ch;
             }
-            .buttons {<style>
-           body {
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-            } 
-            h1 {
-                  background: blue;
-color: white;<style>
-           body {
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-            } 
-            h1 {
-                  background: blue;
-color: white;
-                  text-align: center;
-border: light-gray;
+            .buttons {
+                /*border: thin solid black;*/
+                width: 100%;
+                text-align: right;
             }
-            div.grid {
-                  margin: 1em;
-border: thin solid black;
+            input[type=button] {
+                min-width: 7em;
+                text-align: center;
             }
-            label, span, input[type=text] {
-                  display: inline-block;
-                  min-width: 7em;
-                  overflow: hide;
-                  padding-right: 1ch;
-            }
-      </style>
+       </style>
 <h1>Usuarios</h1>
 
         <span>Nombre</span>
-        <input type="text"  >Francisco Javier Teresa del Pozo</input><br /><br />
+        <input type="text"   value="Francisco Javier Teresa del Pozo" ></input><br /><br />
 
         <span>Rol</span>
-        <input type="text" >Administrador</input><br /><br />
+        <input type="text"  value="Administrador" ></input><br /><br />
 
             <input type="button" value="Borrar" ></input>
             <input type="button" value="Editar" ></input>
             <input type="button" value="Nuevo" ></input><br /><br />
         
-        <span>Elementos</span> 
+        <span>Usuarios</span>
 
         <div class="grid">
+		<div class="header">
+          		<label>Nombre</label>
+         		<label>Rol</label>
+		</div>
 
-          <label>Nombre</label>
-          <span>Francisco Javier Teresa del Pozo</span>
-          
-          <label>Rol</label>
-          <span>Administrador</span><br /><br />
 
-          <label>Nombre</label>
-          <span>Andres Gutierrez Benitez</span>
-          
-          <label>Rol</label>
-          <span>Vendedor</span><br /><br />
+		<div>
+          		<span>Francisco Javier Teresa del Pozo</span>
+          		<span>Administrador</span><br /><br />
+		</div>
+
+
+		<div>
+        	  	<span>Andres Gutierrez Benitez</span>
+         		 <span>Vendedor</span><br /><br />
+		</div>
+
         <div>
 
  </body>
