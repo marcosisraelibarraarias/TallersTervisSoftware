@@ -2,62 +2,13 @@
 <meta charset="utf-8">
 <html>
       <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
       </head>      
   <body>
-           <style>
-           body {
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-                  max-width: 50em;
-                  font-family: sans-serif;
-                  font: arial;Descripción
-
-            } 
-            h1 {
-                  background: blue;
-                  color: white;
-                  text-align: center;Descripción
-                  border: light-gray;
-                  font-size: x-large;
-            }
-
-            div.grid {
-                  margin: 1em;
-/*border: thin solid black;*/
-            }
-            .grid div {
-                background: white;
-                border: solid thin black;
-                vertical-align: middle;
-
-            }
-            .grid div.header {
-                background: #d7dbdd;
-                border: solid thin black;
-                vertical-align: middle;
-            }
-
-            .grid div span, .grid div label {
-                vertical-align: middle;
-                display: inline-block;
-                min-width: 15em;
-                max-width: 15em;
-            }
-
-             label, span, input[type=text] {
-                  display: inline-block;
-                  min-width: 7em;
-                  overflow: hide;
-                  padding-right: 1ch;
-            }
-            .buttons {
-                /*border: thin solid black;*/
-                width: 100%;
-                text-align: right;
-            }
-            input[type=button] {
-                min-width: 7em;
-                text-align: center;
+       <style>
+            .grid div.header span, .grid div span, .grid div label {
+                min-width: 14em;
+                max-width: 14em;
             }
        </style>
 
@@ -65,27 +16,31 @@
 
 
         <span>Tipo de Llave</span>
-        <input type="text" >Remota</input><br /><br />
-
+        <input type="text" value="Remota" ></input><br /><br />
+        <div class="buttons">
             <input type="button" value="Borrar" ></input>
             <input type="button" value="Editar" ></input>
             <input type="button" value="Nuevo" ></input><br /><br />
-        
-        <span>Elementos</span>
+        </div>
+        <span>Tipos de llave</span><br /><br />
 
         <div class="grid">
 
+        <div class="header">
           <label>Tipo de Llave</label>
-          <span>Llave electrónica</span>
-          
-          <label>Tipo de Llave</label>
-          <span>Administrador</span><br /><br /> 
+          <label>Datos Auxiliares</label>
+        </div>
 
-          <label>Tipo de Llave</label>
+        <div>
+          <span>Llave electrónica</span>
+          <span>Es remota y con boton.</span><br /><br />
+        </div>
+
+        <div>
           <span>Llave mecánica</span>
-          
-          <label>Tipo de Llave</label>
           <span>Con Boton</span><br /><br />
+        </div>
+
         <div>
 
  </body>
