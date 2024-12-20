@@ -1,71 +1,20 @@
 <!DOCTYPE html>
 <html>
       <head>
+          <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
       </head>      
   <body>
-          <style>
-           body { 
-                  background:  #d7dbdd ;
-                  padding: 1em;     
-                  max-width: 50em;
-                  font-family: sans-serif;
-                  font: arial;Descripción
-
-            } 
-            h1 {
-                  background: blue;
-                  color: white;
-                  text-align: center;Descripción
-                  border: light-gray;
-                  font-size: x-large;
-            }
-
-            div.grid {
-
-            }
-            .grid div {
-                background: white;
-                border: solid thin black;
-                vertical-align: middle;
-
-            }
-            .grid div.header {
-                background: #d7dbdd;
-                border: solid thin black;
-                vertical-align: middle;
-		overflow: wrap;
-            }
-
-            .grid div span, .grid div label {
-                vertical-align: middle;
-                display: inline-block;
-                min-width: 7em;
-                max-width: 7em;
-            }
-	.grid div span.price , .grid div label.price, .quantity , .quantity {
-                vertical-align: middle;
-                display: inline-block;
-                min-width: 3em;
-                max-width: 3em;
-            }
-
-             label, span, input[type=text] {
-                  display: inline-block;
-                  min-width: 7em;
-                  overflow: hide;
-                  padding-right: 1ch;
-		 vertical-align: middle;
-            }
-            .buttons {
-                /*border: thin solid black;*/
-                width: 100%;
-                text-align: right;
-            }
-            input[type=button] {
-                min-width: 7em;
-                text-align: center;
-            }
-       </style>
+    
+    <style>
+        .grid div.header span.quantity, .grid div.header span.price {
+            min-width: 1em;
+            max-width: 1em;
+        }
+        .grid div.header span, .grid div span, .grid div label {
+            min-width: 6em;
+            max-width: 6em;
+        }
+   </style>
 
 
       
@@ -90,12 +39,13 @@
 
 	 <div class="header">
           <label>Nombre</label>
-          <label class="quantity">Cantidad</label>
+          <label class="quantity">Cant.</label>
           <label>Nombre del Proveedor</label>
           <label class="price">Precio de Compra</label>
           <label class="price">Precio de Venta</label>
           <label>Identificador del tipo de elemento</label>
           <label>Numero de serie</label>
+    </div>
 	<div>
 
           <span>Llave Remota 4A-PC7952E</span>
@@ -108,9 +58,9 @@
 
           <span class="price">130.00</span>
 
-          <span>X112Datong</span>
+          <span>X112Dat</span>
 
-          <span>NSX112202403</span><br />
+          <span>NSX112202</span><br />
 	</div>
 	<div>
           <span>Keyyou</span> 
@@ -125,10 +75,10 @@
 
           <span class="price">180.00</span>
 
-          <span>KEYYOURPC79</span>
+          <span>KEYYOURPC</span>
 
 
-          <span>KEYYOURPC79</span>
+          <span>KEYYOU</span>
 
 	</div>
 
