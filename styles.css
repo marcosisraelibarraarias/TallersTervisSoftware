@@ -4,18 +4,22 @@ body {
           max-width: 50em;
           font-family: sans-serif;
           font: arial;Descripción
+          border: thin solid light-gray;
+            vertical-align: middle;
 
 } 
 h1 {
       background: blue;
       color: white;
-      text-align: center;Descripción
-      border: light-gray;
+      text-align: center;
+      border: thin solid light-gray;
       font-size: x-large;
 }
 div.grid {
+    
 }
 .grid div {
+    padding: 0.5ch;
     background: white;
     border: solid thin black;
     vertical-align: middle;
@@ -36,7 +40,7 @@ div.grid {
 
  label, span, input[type=text] {
       display: inline-block;
-      min-width: 7em;
+      min-width: 17ch;
       overflow: wrap;
       padding-right: 1ch;
 }
