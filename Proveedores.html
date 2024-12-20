@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html>
       <head>
-         <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
-      </head>      
-  <body>
-    <style>
-        .grid div.header span.quantity, .grid div.header span.price {
-            min-width: 1em;
-            max-width: 1em;
-        }
-        .grid div.header span, .grid div span, .grid div label {
-            min-width: 6em;
-            max-width: 6em;
-        }
-   </style>
+      </head>    
+  <body>      
+<style>
+           body {
+                  background:  #d7dbdd ;
+                  padding: 1em;     
+                  max-width: 50em;
+                  font-family: sans-serif;
+                  font: arial;Descripción
 
+            } 
+            h1 {
+                  background: blue;
+                  color: white;
+                  text-align: center;Descripción
+                  border: light-gray;
+                  font-size: x-large;
+            }
 
-<h1>Proveedores</h1>
+            div.grid {
+            }
+            .grid div {
+                background: white;
+                border: solid thin black;
+                vertical-align: middle;
 
-        <span>Nombre corto o Alias</span>
-        <input type="text" ></input><br /><br />
+            }
+            .grid div.header {
+                background: #d7dbdd;
+                border: solid thin black;
+                vertical-align: middle;
+            }
 
-        <span>Nombre completo</span>
-        <input type="text"  ></input><br /><br />
+            .grid div span, .grid div label {
+                vertical-align: middle;
+                display: inline-block;
+                min-width: 11em;
+                max-width: 11em;
+            }
 
-        <span>Dirección</span>
-        <input type="text"  ></input><br /><br />
+             label, span, input[type=text] {
+                  display: inline-block;
+                  min-width: 7em;
+                  overflow: hide;
+                  padding-right: 1ch;
+            }
+            .buttons {
+                /*border: thin solid black;*/
+                width: 100%;
+                text-align: right;
+            }
+            input[type=button] {
+                min-width: 7em;
+                text-align: center;
+            }
+      </style>
+      
+        <h1>Busqueda de Productos</h1>
 
-        <span>Datos Extra</span>
-        <input type="text"  ></input><br /><br />
-        
-	<div class="buttons">
-            <input type="button" value="Borrar"/>
-            <input type="button" value="Editar"/>
-            <input type="button" value="Nuevo"/><br /><br />
-	</div>
-        
-        <span>Elementos</span>
+        <span>Palabra Clave</span>
 
-        <div class="grid">
-	<div class="header">
-          <label>Nombre corto o Alias</label>
-          <label>Nombre completo</label>
-          <label>Dirección</label>
-          <label>Datos Extra</label>
-	</div>
-		<div>
-		<span>Datong</span>
-              
+        <input type="text"  value="Llave" /><br /><br />
 
-          <span>Datong en España S.A. de C.V.</span>
+        <div class="buttons">
 
-          <span>Carrer de Lepanto 10, Valencia España</span>
-          <span>Especializados en llaves remotas y alarmas</span><br />
-
-	</div>
-	<div>
-          <span>Keyyou</span>
-              
-
-          <span>Keyyou de España S.A. de C.V.</span>
-
-
-          <span>Carrer de Lepanto 25, Valencia España</span>
-
-
-          <span>Especializados en llaves remotas</span><br />
+        <input type="button" value="Buscar" ></input>
+        <input type="button" value="Agregar" ></input><br /><br />
 
         </div>
+        
+        <span>Productos Encontrados</span>
+
+        <div class="grid">
+
+            <div class="header">
+            <label>Producto</label>
+
+            <label>Descripción</label>
+
+             <label>Precio</label>
+            <label>Agregar</label>
+
+            </div>
+        
+
+            <div>
+          <span>Llave X112</span>
+          <span>Llave remota para autos Ford de entre 2015 y 2020</span>
+          <span>150.00</span>
+            <span><input type="checkbox"></input></span>
+        </div>
+        <div >
+
+          <span>Llave para autos Ford</span>
+
+          <span>Llave para autos Ford de entre 2015 y 2020</span>
+
+          <span>75.00</span>
+            <span><input type="checkbox"></input></span>
+        </div>
+        <div>
+
+          <span>Llave Young 12</span>
+          <span>Llave con boton con frecuencia de 433 Hz</span>
+          <span>200.00</span>
+            <span><input type="checkbox"></input></span>
+        </div>
+        <div>
+
  </body>
 </html>
