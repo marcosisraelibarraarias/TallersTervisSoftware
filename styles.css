@@ -1,0 +1,50 @@
+body {
+          background:  #d7dbdd;
+          padding: 1em;     
+          max-width: 50em;
+          font-family: sans-serif;
+          font: arial;Descripción
+
+} 
+h1 {
+      background: blue;
+      color: white;
+      text-align: center;Descripción
+      border: light-gray;
+      font-size: x-large;
+}
+div.grid {
+}
+.grid div {
+    background: white;
+    border: solid thin black;
+    vertical-align: middle;
+
+}
+.grid div.header {
+    background: #d7dbdd;
+    border: solid thin black;
+    vertical-align: middle;
+}
+
+.grid div span, .grid div label {
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 10em;
+    max-width: 10em;
+}
+
+ label, span, input[type=text] {
+      display: inline-block;
+      min-width: 7em;
+      overflow: wrap;
+      padding-right: 1ch;
+}
+.buttons {
+    width: 100%;
+    text-align: right;
+}
+input[type=button] {
+    min-width: 7em;
+    text-align: center;
+}
