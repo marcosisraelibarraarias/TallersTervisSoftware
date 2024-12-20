@@ -1,64 +1,44 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
       <head>
         <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
-      </head>    
-  <body>      
-    <style>
-        .grid div.header span, .grid div span, .grid div label {
-            min-width: 9em;
-            max-width: 9em;
-        }
-   </style>
-      
-        <h1>Busqueda de Productos</h1>
+      </head>      
+  <body>
+       <style>
+            .grid div.header span, .grid div span, .grid div label {
+                min-width: 14em;
+                max-width: 14em;
+            }
+       </style>
 
-        <span>Palabra Clave</span>
+      <h1>Catalogo de Tipo de Llave</h1>
 
-        <input type="text"  value="Llave" /><br /><br />
 
+        <span>Tipo de Llave</span>
+        <input type="text" value="Remota" ></input><br /><br />
         <div class="buttons">
-
-        <input type="button" value="Buscar" ></input>
-
+            <input type="button" value="Borrar" ></input>
+            <input type="button" value="Editar" ></input>
+            <input type="button" value="Nuevo" ></input><br /><br />
         </div>
-        
-        <span>Productos Encontrados</span>
+        <span>Tipos de llave</span><br /><br />
 
         <div class="grid">
 
-            <div class="header">
-                <label>Producto</label>
-
-                <label>Descripción</label>
-
-                 <label>Precio</label>
-
-            </div>
-        
-
-            <div>
-              <span>Llave X112</span>
-              <span>Llave remota para autos Ford de entre 2015 y 2020</span>
-              <span>150.00</span>
-                <input type="button" value="Agregar" >
-        </div>
-        <div >
-
-              <span>Llave para autos Ford</span>
-
-              <span>Llave para autos Ford de entre 2015 y 2020</span>
-
-              <span>75.00</span>
-                <input type="button" value="Agregar" ></input>
+        <div class="header">
+          <label>Tipo de Llave</label>
+          <label>Datos Auxiliares</label>
         </div>
 
         <div>
+          <span>Llave electrónica</span>
+          <span>Es remota y con boton.</span><br /><br />
+        </div>
 
-          <span>Llave Young 12</span>
-          <span>Llave con boton con frecuencia de 433 Hz</span>
-          <span>200.00</span>
-            <input type="button" value="Agregar" ></input>	
+        <div>
+          <span>Llave mecánica</span>
+          <span>Con Boton</span><br /><br />
         </div>
 
         <div>
